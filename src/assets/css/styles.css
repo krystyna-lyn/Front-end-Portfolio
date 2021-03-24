@@ -1,0 +1,278 @@
+
+@font-face{
+    font-family: 'yanone';
+    src: url('fonts/yanone.ttf');
+}
+
+@font-face{
+    font-family: 'finger';
+    src: url('fonts/finger.ttf');
+}
+
+@font-face{
+    font-family: 'titilium';
+    src: url('fonts/titilium.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'yanone',Arial, Helvetica, sans-serif;
+    background: url(../img/pattern.png);
+    font-size: 20px;
+    background-attachment: fixed;
+
+}
+header{
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(57, 25, 75, 0.904);
+    position: fixed;
+    text-transform: uppercase;
+
+    
+}
+.clearfix{
+    float:none;
+    clear: both;
+}
+header ul{
+    display: block;
+    width: 34%;
+    height: inherit;
+    margin: 0px auto;
+}
+header ul li{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 90px;
+}
+header a{
+    display: block;
+    padding-right: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    color:rgb(226, 219, 233);
+    font-size: 25px;
+    transition: all 300ms;
+}
+header a:hover, .actived{
+    background: rgba(245, 245, 240, 0.836);
+    color: rgba(30, 12, 41, 0.904);
+    
+}
+
+#logo{
+    font-family: "finger";
+    font-size: 30px;
+}   
+#logo a{
+    transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover{
+background: transparent;
+color:white;
+transform: scale(1.50,1.50);
+}
+
+#content{
+    min-height: 1000px;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px black;
+    background: rgba(247, 245, 245, 0.74);
+    padding-top:120px;
+    border-left: 1px solid black;
+    z-index: -1;
+    
+}
+footer{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 25px;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+#title{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#title h1{
+    font-family: "finger";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+#title h2{
+    font-size: 25px;
+    color:grey;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.myFoto{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-left: 42%;
+    
+}
+.myFoto img{
+   width: 100%;
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+
+}
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.about p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+/* Section Form*/
+.container{
+    padding: 50px;
+    padding-top: 10px;
+}
+.container h2{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+form{
+    width: 80%;
+}
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-top: 5px;
+}
+form input[type='text'],
+form input[type='number'],
+form textarea
+{
+width: 40%;
+padding: 5px;
+
+}
+form button,
+input[type='submit'],
+.button-edit,
+.button-delete{
+display: block;
+font-size: 15px;
+padding:7px;
+margin-top: 15px;
+color:white;
+background-color: rgba(57, 25, 75, 0.904);;
+border: 1px solid rgb(32, 21, 37);
+cursor: pointer;
+}
+
+.button-edit,
+.button-delete{
+    width: 10%;
+    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+form button:hover,
+input[type='submit']:hover{
+
+background-color: rgba(122, 93, 139, 0.623);
+border: 1px solid rgb(77, 57, 88,1);
+}
+
+form input[disabled]{
+    opacity: 0.4;
+    cursor:not-allowed;
+}
+
+.form-error{
+    padding:3px;
+    color:red;
+    font-size: 20px;
+}
+
+.success{
+    color: green;
+}
+.failed{
+    color: red;
+}
+
+/*projects*/
+
+
+.project{
+    list-style: none;
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.project .mask{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.project img{
+width: 150%;
+}
+.project a{
+    text-decoration: none;
+    color: black;
+}
+
+.image img{
+    width: 70%;
+    margin-bottom: 20px;
+   
+}
+.container {
+    margin-left: 20%;
+}
+
+
+.confirm{
+	display: block;
+	font-weight: bold;
+    margin-top: 20px;
+    color: rgb(199, 15, 15);
+}
+.bx-wrapper{
+margin: 0 auto;
+}
+.p-gal{
+    margin: 20px 150px;
+}
+.h1-gal{
+   text-align: center;
+}
+
+
