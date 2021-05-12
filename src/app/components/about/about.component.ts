@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
 
   constructor() {
     this.title="Krys Lyn";
-    this.subtitle="Development web and design";
+    this.subtitle="Web development and design";
     this.email="krys@lyn.com";
 
    }
