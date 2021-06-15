@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   public email:string;
 
   constructor() {
-    this.title="Krys Lyn";
+    this.title="Krystyna Lyn";
     this.subtitle="Web development and design";
     this.email="krys@lyn.com";
 
